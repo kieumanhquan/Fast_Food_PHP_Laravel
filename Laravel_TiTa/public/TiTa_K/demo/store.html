@@ -1,0 +1,168 @@
+
+<!DOCTYPE>
+<html>
+<head>
+    <title>
+            Xin lỗi bạn, hệ thống kh&#244;ng t&#236;m thấy trang: store
+</title>
+<style type="text/css">
+    body {
+        font-family: Arial;
+        color: #FFF;
+        background: url('/Themes/Portal/Default/Images/404.jpg') no-repeat center top;
+        background-size: cover;
+    }
+
+    #box {
+        margin: 0 auto;
+        width: 694px;
+        height: 380px;
+    }
+
+        #box .content {
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+
+            #box .content h1, #box .content h2 {
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                width: 100%;
+                left: 0;
+            }
+
+            #box .content h1 {
+                font-size: 300px;
+                top: 0;
+            }
+
+            #box .content h2 {
+                font-size: 38px;
+                top: 285px;
+            }
+
+        #box .search {
+            width: 694px;
+            height: 93px;
+            position: absolute;
+            top: 350px;
+            left: 0;
+            background-color: #FFF;
+        }
+
+        #box .tbox {
+            width: 458px;
+            height: 50px;
+            overflow: hidden;
+            text-align: left;
+            border: solid 1px #c8c8c8;
+            position: absolute;
+            left: 15px;
+            top: 21px;
+        }
+
+            #box .tbox input[type='text'] {
+                font-family: Arial;
+                font-size: 16px;
+                color: #747474;
+                padding: 3px;
+            }
+
+            #box .tbox input[type='text'] {
+                width: 448px;
+                height: 40px;
+                margin: 1px 0 0 1px;
+                border: solid 1px transparent;
+            }
+
+        #box a.bt-search {
+            text-decoration: none;
+            position: absolute;
+            right: 92px;
+            top: 21px;
+        }
+
+        #box a.back {
+            text-decoration: none;
+            position: absolute;
+            right: 15px;
+            top: 21px;
+        }
+
+        #box img {
+            border: none;
+        }
+
+    .clear {
+        clear: both;
+    }
+
+    textarea:focus, input:focus {
+        outline: 0;
+    }
+</style>
+<script src="/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <script type="text/javascript">
+    function sizeBox() {
+        var w = $(window).width();
+        var h = document.getElementsByTagName('html')[0].clientHeight
+        $('#box').css('position', 'absolute');
+        $('#box').css('top', h / 2 - ($('#box').height() / 2) - 50);
+        $('#box').css('left', w / 2 - ($('#box').width() / 2));
+    }
+    $(function () {
+        sizeBox();
+
+        var _defaultText = 'Nội dung tìm kiếm...';
+        $("#tb_search").focus(function () {
+            if ($(this).val() == _defaultText) $(this).val('');
+        });
+        $("#tb_search").focusout(function () {
+            if ($(this).val() == '') $(this).val(_defaultText);
+        });
+
+        $('.bt-search').click(function () {
+            if ($('#tb_search').val() == '' || $('#tb_search').val() == _defaultText) {
+                alert('Vui lòng nhập từ khóa tìm kiếm!');
+                return false;
+            }
+            window.location = 'https://docs.bizweb.vn/tim-kiem.html?SupportTypeId=1&Keyword=' + encodeURIComponent($('#tb_search').val());
+        });
+        $('#tb_search').keypress(function (e) {
+            if (e.which == 13) {
+                $('.bt-search').trigger('click');
+            }
+        });
+    });
+    $(window).resize(function () {
+        sizeBox();
+    });
+    </script>
+    <div id="box">
+        <div class="content">
+            <h1>
+                404
+            </h1>
+            <h2>
+                Trang không được tìm thấy
+            </h2>
+            <div class="search">
+                <div class="tbox">
+                    <input id="tb_search" type="text" value="Nội dung tìm kiếm..." />
+                </div>
+                <a href="javascript:;" class="bt-search">
+                    <img src="/Themes/Portal/Default/Images/search-404.png" alt="" />
+                </a>
+                <a href="//www.bizweb.vn" title="Trở về trang chủ" class="back">
+                    <img src="/Themes/Portal/Default/Images/icon-home.png" alt="" />
+                </a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

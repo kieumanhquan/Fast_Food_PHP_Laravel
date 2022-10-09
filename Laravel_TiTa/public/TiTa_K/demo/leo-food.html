@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Mirrored from themes.bizweb.vn/demo/leo-food by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 29 Mar 2018 15:12:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem website demo</title>
+    <link href="../Content/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link href="../Content/font-roboto/font-robotos.css" rel="stylesheet" />
+    <link href="../Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Themes/Portal/Default/StyleNew/modules/themify-icons.css" rel="stylesheet" />
+    <link href="../Themes/Portal/Default/Styles/new-main3860.css?v=1" rel="stylesheet" />
+    <link href="../Themes/Portal/Default/Styles/theme-detail3860.css?v=1" rel="stylesheet" />
+    <link href="../Themes/Portal/Default/Styles/Style.css" rel="stylesheet" />
+    <link href="../Themes/Portal/Default/Styles/view-demo448d.css?v=1.42" rel="stylesheet" />
+    <script src="../Scripts/jquery-2.1.4.min.js"></script>
+    <script src="../Content/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../Content/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+    setTimeout(function () {
+        var a = document.createElement("script");
+        var b = document.getElementsByTagName("script")[0];
+        a.src = document.location.protocol + "//script.crazyegg.com/pages/scripts/0041/5407.js?" + Math.floor(new Date().getTime() / 3600000);
+        a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+    }, 1);
+    </script>
+
+</head>
+<body>
+    <div id="view-demo">
+            <div class="demo-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <a href="https://themes.bizweb.vn/leo-food" class="view-back">
+                        <i class="icon-view-back"></i>
+                        Quay về xem chi tiết
+                    </a>
+                </div>
+                <div class="col-md-5 hidden-sm hidden-xs text-center view-type">
+                    <a class="type-item desktop current" href="javascript:void()">
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 0H2C.897 0 0 .897 0 2v8c0 1.103.897 2 2 2h4.667v2h-2c-.552 0-1 .447-1 1 0 .553.448 1 1 1h6.667c.552 0 1-.447 1-1 0-.553-.448-1-1-1h-2v-2H14c1.104 0 2-.897 2-2V2c0-1.103-.896-2-2-2zM2 10V2h12v8H2z"></path>
+                        </svg>
+                        Desktop
+                    </a>
+                    <a class="type-item mobile" href="javascript:void()">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7 0H6.3C5.6 0 5 .6 5 1.3v21.3c0 .8.6 1.4 1.3 1.4h12.3c.7 0 1.4-.587 1.4-1.287V1.3c0-.7-.6-1.3-1.3-1.3zm-6.2 22.6c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3zm4.5-4c0 .2-.2.4-.4.4H8.4c-.2 0-.4-.2-.4-.4V3.4c0-.2.2-.4.4-.4h8.1c.3 0 .5.2.5.4v15.2z"></path>
+                        </svg>
+                        Mobile
+                    </a>
+                    <a class="type-item tablet" href="javascript:void()">
+                        <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37 0h-28c-2.76 0-5 2.24-5 5v38c0 2.76 2.24 5 5 5h28c2.76 0 5-2.24 5-5v-38c0-2.76-2.24-5-5-5zm-14 46c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm15-8h-30v-32h30v32z" transform="rotate(180deg)" />
+                        </svg>
+                        Tablet
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 text-right" style="line-height: 40px;">
+                        <a href="javascript:void(0)" class="hidden-xs btn-registration banner-home-registration event-Template-apply-form-open" data-toggle="modal" data-target="#myModal">Sử dụng giao diện này</a>
+                    <a href="https://leo-food.bizwebvietnam.net/" class="view-normal hidden-sm hidden-xs"><i class="ti-close"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="demo-wrapper" class="desktop-view">
+        <div id="demo-container">
+            <iframe id="frame" src="https://leo-food.bizwebvietnam.net/"></iframe>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ismobile = getParameterByName('mobile');
+            if (ismobile == 'true') {
+                $(".view-type a").removeClass("current");
+                $(".view-type a.desktop").removeClass("type-item desktop");
+                $(".view-type a.mobile").addClass("current");
+                $("#demo-container").attr('style', 'max-width: 375px; max-height: 568px; margin: -310px 0px 0px -160px; top: 50%; left: 50%;');
+                console.log("done");
+            }
+
+        });
+        $(function () {
+            $(".view-type a.desktop").click(function () {
+                $(".view-type a").removeClass("current");
+                $(this).addClass("current");
+                $("#demo-container").attr('style', 'max-width: 100%; max-height: 100%; margin: 0px; top: 0px; left: 0px;');
+            });
+
+            $(".view-type a.mobile").click(function () {
+                $(".view-type a").removeClass("current");
+                $(this).addClass("current");
+                $("#demo-container").attr('style', 'max-width: 375px; max-height: 568px; margin: -310px 0px 0px -187px; top: 50%; left: 50%;');
+            });
+
+            $(".view-type a.tablet").click(function () {
+                $(".view-type a").removeClass("current");
+                $(this).addClass("current");
+                $("#demo-container").attr('style', 'max-width: 1024px; max-height: 568px; margin: -310px 0px 0px -512px; top: 50%; left: 50%;');
+            });
+        });
+    </script>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-themes">
+                <div class="modal-header" style="padding-right:0;">
+                    <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <h3>Bạn đã có website tại Bizweb</h3>
+                        </div>
+                        <form method="get" action="#" id="formLoginRedirect" onsubmit="return redirectToBackend()">
+                            <input id="Alias" name="Alias" type="hidden" value="leo-food" />
+                            <div class="form-group dvmodal quick-registration">
+                                <div class="col-sm-8">
+                                    <input name="storeAlias" type="text" placeholder="Nhập tên website của bạn" class="input-site-name" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <button id="btnLogin" type="submit" class="btn-registration banner-home-registration btn-login-store">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Đăng nhập &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                function redirectToBackend() {
+                                    var store = $("#formLoginRedirect input[name='storeAlias']").val().trim();
+                                    if (store == "") {
+                                        alert("Vui lòng nhập địa chỉ website");
+                                        $("#formLoginRedirect input[name='storeAlias']").focus();
+                                        return false;
+                                    }
+                                    if (store.indexOf(".") > -1) {
+                                        if (!store.startsWith("http")) {
+                                            store = "http://" + store;
+                                        }
+                                        var url = new URL(store.html);
+                                        store = url.hostname;
+                                        store = store.replace(".bizwebvietnam.net", "");
+                                    }
+
+                                    window.location.href = "http://" + store + ".bizwebvietnam.net/admin/themes/install?alias=leo-food";
+                                    return false;
+                                }
+                            </script>
+                        </form>
+                        <hr style="margin: 20px 0; border-bottom: 1px solid #e0e0e0;" />
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <h3>Bạn chưa có website?</h3>
+                                <p class="text-sample">
+                                    <span>
+                                        Hệ thống sẽ cài đặt giao diện mặc định cho website dùng thử của bạn.
+                                        Giao diện có phí sẽ sử dụng được khi bạn dùng Bizweb và tải mua giao diện
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group dvmodal quick-registration">
+                            
+                            <div class="col-sm-12">
+                                <button id="btnSearch" type="button" class="btn-registration event-Bizweb-Free-Trial-form-open" onclick="openCreateStorePopup(this, null, 'leo-food')">
+                                    Đăng ký dùng thử miễn phí
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="registration" class="registration-frame" style="display: none;">
+        <iframe id="iFrameRegistration" width="100%" height="700" scrolling="no" frameborder="0" style="border: none;" src="#"></iframe>
+    </div>
+    <script type="text/javascript">
+        var LAST_STORE_COOKIE_NAME = "last_store"
+
+        $(function () {
+            var lastStore = getCookie(LAST_STORE_COOKIE_NAME);
+            if (lastStore !== null && lastStore !== "") {
+                $(".subdomain").removeClass("hide");
+                $("#login-form input[name=Subdomain]").val(lastStore);
+                $("#login-form input[name=Subdomain]").attr("aria-required", "true");
+                $("#login-form input[name=Subdomain]").attr("data-val-required", "Nhập vào đường dẫn website");
+                $("#login-form").removeData("validator");
+                $("#login-form").removeData("unobtrusiveValidation");
+                $.validator.unobtrusive.parse($("#login-form"));
+            }
+        });
+
+        $(document).ready(function () {
+            $("input[name=StoreName]").blur(function () {
+                $("input[name=StoreAlias]").val(generateAlias($("input[name=StoreName]").val()));
+            });
+
+            var createStore = getParameterByName("createStore");
+            if (createStore) {
+                var storeName = getParameterByName("storeName");
+
+                openCreateStorePopup(document, storeName);
+            }
+        });
+
+        var mobile = false;
+        $(window).resize(function () {
+            var ww = $(window).width();
+            if (ww > 855) {
+                mobile = false;
+                $('.fancybox-item.fancybox-close').addClass('fancybox-close-reg-web');
+            }
+            else {
+                mobile = true;
+                $('.fancybox-item.fancybox-close').removeClass('fancybox-close-reg-web');
+            }
+        })
+        $(window).trigger('resize');
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        function onInputStoreName(e, element) {
+            if (e.keyCode == 13) {
+                openCreateStorePopup(element);
+                return false;
+            }
+        }
+
+        function openCreateStorePopup(e, storeName, themeAlias) {
+        var iframeSrc = 'https://store.bizwebvietnam.net/admin/createstore/quickregister?source=bizweb_themes';
+
+        if (!storeName)
+            storeName = $(e).closest(".quick-registration").find(".input-site-name").val();
+
+        if (storeName != null && storeName != "") {
+            iframeSrc = setParameter(iframeSrc, "storeName", storeName);
+            iframeSrc = setParameter(iframeSrc, "storeAlias", generateAlias(storeName));
+        }
+
+        if (themeAlias != null && themeAlias != "")
+            iframeSrc = setParameter(iframeSrc, "theme", themeAlias);
+
+        var track_source = getParameterByName("source");
+        if (track_source !== null && track_source !== "")
+            setCookie("track_source", track_source, 30);
+
+        track_source = getCookie("track_source");
+        if (track_source !== null && track_source !== "") {
+            iframeSrc = setParameter(iframeSrc, "source", track_source);
+        }
+        else {
+            iframeSrc = setParameter(iframeSrc, "source", "bizweb_themes");
+        }
+
+
+        var kd = getCookie("kd");
+        if (kd !== null && kd !== "")
+            iframeSrc = setParameter(iframeSrc, "kd", kd);
+
+        var ref = getCookie("ref");
+        if (ref !== null && ref !== "")
+            iframeSrc = setParameter(iframeSrc, "ref", ref);
+        $('#registration iframe').attr('src', iframeSrc);
+
+        $.fancybox.open({
+            fitToView: false,
+            closeClick: false,
+            openEffect: 'fade',
+            closeEffect: 'fade',
+            href: "#registration",
+            width: "100%",
+            maxWidth: 847,
+            autoSize: false,
+            autoHeight: true,
+            margin: [20, 0, 20, 0],
+            'afterShow': function () {
+                $('.fancybox-item.fancybox-close').addClass('fancybox-close-reg');
+                if (mobile == false) {
+                    $('.fancybox-item.fancybox-close').addClass('fancybox-close-reg-web');
+                }
+            },
+            'afterClose': function () {
+                $('.fancybox-item.fancybox-close').removeClass('fancybox-close-reg');
+                $('.fancybox-item.fancybox-close').removeClass('fancybox-close-reg-web');
+            }
+        });
+    }
+
+        function generateAlias(text) {
+            text = text.toLowerCase();
+            text = text.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+            text = text.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+            text = text.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+            text = text.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+            text = text.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+            text = text.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+            text = text.replace(/đ/g, "d");
+            text = text.replace(/'|\"|\(|\)|\[|\]/g, "");
+            text = text.replace(/\W+/g, "-");
+            if (text.slice(-1) === "-")
+                text = text.replace(/-+$/, "");
+
+            if (text.slice(0, 1) === "-")
+                text = text.replace(/^-+/, "");
+
+            return text;
+        }
+
+        function openLoginPopup() {
+            $.fancybox.open({
+                fitToView: false,
+                closeClick: false,
+                openEffect: 'fade',
+                closeEffect: 'fade',
+                href: "#login-div",
+                autoSize: true,
+                margin: [20, 0, 20, 0]
+            });
+        }
+
+        function login() {
+            var bizwebDomain = 'https://store.bizwebvietnam.net/';
+            var findSubdomainSrc = bizwebDomain + '/admin/services/findsubdomain';
+
+            $("#login-form .errors ul").html("");
+
+            if ($("#login-form").valid()) {
+                $.ajax({
+                    url: findSubdomainSrc,
+                    type: "POST",
+                    data: $("#login-form").serialize(),
+                    success: function (data) {
+                        var loginSubdomain = $("#login-form input[name=Subdomain]").val();
+                        if (data != null && (loginSubdomain === null || loginSubdomain === ""))
+                            loginSubdomain = data.subdomain;
+
+                        var action = bizwebDomain.replace("store", loginSubdomain) + "/admin/authorization/login";
+
+                        setCookie(LAST_STORE_COOKIE_NAME, loginSubdomain, 365);
+
+                        $("#login-form").attr("action", action);
+                        $("#login-form").submit();
+                    },
+                    error: function (data) {
+                        if (data.responseJSON != null && data.responseJSON.error != null) {
+                            if (data.responseJSON.error) {
+                                $("#login-form .errors ul").append("<li>Bạn nhập sai email hoặc mật khẩu.</li>");
+                            }
+                        }
+                        else if (data.responseJSON != null && data.responseJSON.suggest != null) {
+                            var message = "Có phải ý bạn là: '" + data.responseJSON.suggest + "' ?";
+                            $(".subdomain .help-block .help-block").append("<span id='Subdomain-error' class=''>" + message + "</span>");
+                        }
+                        else if (data.responseJSON != null && data.responseJSON.multiple != null) {
+                            $(".subdomain").removeClass("hide");
+                            $(".subdomain .help-block .help-block").append("<span id='Subdomain-error' class=''>Có nhiều hơn một cửa hàng đăng ký dưới email này. Xin hãy nhập đường dẫn website để đăng nhập.</span>");
+                        }
+                        else {
+                            $("#login-form .errors ul").append("<li>Bạn nhập sai email hoặc mật khẩu.</li>");
+                        }
+                    }
+                });
+            }
+
+            return false;
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+        function setCookie(cname, cvalue, exdays) {
+            if (!exdays)
+                exdays = 30;
+
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + "; " + expires + ";domain=.bizweb.vn;path=/";
+        }
+
+        function setParameter(url, paramName, paramValue) {
+            if (url.indexOf(paramName + "=") >= 0) {
+                var prefix = url.substring(0, url.indexOf(paramName));
+                var suffix = url.substring(url.indexOf(paramName));
+                suffix = suffix.substring(suffix.indexOf("=") + 1);
+                suffix = (suffix.indexOf("&") >= 0) ? suffix.substring(suffix.indexOf("&")) : "";
+                url = prefix + paramName + "=" + paramValue + suffix;
+            }
+            else {
+                if (url.indexOf("?") < 0)
+                    url += "?" + paramName + "=" + paramValue;
+                else
+                    url += "&" + paramName + "=" + paramValue;
+            }
+
+            return url;
+        }
+    </script>
+</body>
+
+<!-- Mirrored from themes.bizweb.vn/demo/leo-food by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 29 Mar 2018 15:12:43 GMT -->
+</html>
